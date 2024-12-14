@@ -1659,7 +1659,7 @@ public:
 
     bool cameraLooksAtMario();
     u32 checkMarioVoicePlaying(u8);
-    void checkWaveOnAram(MS_SCENE_WAVE);
+    bool checkWaveOnAram(MS_SCENE_WAVE);
     void demoModeIn(u16, bool);
     void demoModeOut(bool);
     void enterStage(MS_SCENE_WAVE, u8, u8);
