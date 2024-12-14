@@ -121,7 +121,7 @@ public:
     void createSampleModelData(J3DModelData *);
 
     // Initializes animation data using all bck files in described folder
-    void init(const char *path, const char**);
+    void init(const char *path, const char **);
 
     s32 partsNameToIdx(const char *);
 
