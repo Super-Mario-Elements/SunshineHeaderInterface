@@ -2,6 +2,8 @@
 
 #include <Dolphin/types.h>
 #include <SMS/System/Params.hxx>
+#include <JGeometry/JGMVec.hxx>
+#include <SMS/M3DUtil/MActor.hxx>
 
 struct TWaterEmitInfo : public TParams {
     TWaterEmitInfo(const char *prm);
@@ -80,10 +82,10 @@ public:
     TNozzleBase(const char *name, const char *prm, TWaterGun *fludd);
 
     virtual void init();
-    virtual u8 getNozzleKind();
-    virtual s16 getGunAngle() const;
+    virtual u8 getNozzleKind() const;
+    virtual s16 getGunAngle();
     virtual s16 getWaistAngle();
-    virtual void movement();
+    virtual void movement(const TMarioControllerWork &);
     virtual void emitCommon(int, TWaterEmitInfo *);
     virtual void emit(int);
     virtual void animation(int);
@@ -97,5 +99,5 @@ public:
     f32 _374;
     f32 _378;
     f32 _37C;
-    f32 _380;
+    MActor *mModel;
 };  // 0x384

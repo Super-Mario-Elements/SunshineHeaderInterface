@@ -49,7 +49,9 @@ public:
     TVec3f mTranslation;       // 0x0020
     u32 _03[0x8 / 4];          // 0x002C
     MActor *mActor;            // 0x0034
-    u32 _04[0x4C / 4];         // 0x0038
+    u32 _38;                   // 0x0038
+    u32 mJoint;                // 0x003c
+    u32 _04[0x44 / 4];         // 0x0040
     f32 mRedComponent;         // 0x0084
     f32 mGreenComponent;       // 0x0088
     f32 mBlueComponent;        // 0x008C

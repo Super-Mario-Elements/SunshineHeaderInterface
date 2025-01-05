@@ -5950,6 +5950,7 @@
 #define getNearGrip__8TBathtubCFRCQ29JGeometry8TVec3_f                 ((int (*)(...))0x801F9BE4)
 #define calcRootMatrix__8TBathtubFv                                    ((int (*)(...))0x801F9DB0)
 #define allowsTumble__8TBathtubCFv                                     ((int (*)(...))0x801F9EE4)
+#define getNozzleKind__11TNozzleBaseCFv                                ((int (*)(...))0x8026266C)
 #define getNozzleKind__14TNozzleTriggerCFv                             ((int (*)(...))0x801FA150)
 #define startDemo__8TBathtubFv                                         ((int (*)(...))0x801FA168)
 #define setupCollisions___8TBathtubFv                                  ((int (*)(...))0x801FA404)
