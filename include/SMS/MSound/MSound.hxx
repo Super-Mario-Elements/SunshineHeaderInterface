@@ -6,17 +6,17 @@
 #include <JSystem/JKernel/JKRHeap.hxx>
 
 enum MS_SCENE_WAVE {
-    MS_WAVE_DEFAULT = 256,
-    MS_WAVE_DOLPIC = 513,
-    MS_WAVE_BIANCO = 514,
-    MS_WAVE_MANMA = 515,
-    MS_WAVE_PINNAPACO_S = 516,
-    MS_WAVE_PINNAPACO = 516,
-    MS_WAVE_MARE_SEA = 517,
+    MS_WAVE_DEFAULT      = 256,
+    MS_WAVE_DOLPIC       = 513,
+    MS_WAVE_BIANCO       = 514,
+    MS_WAVE_MANMA        = 515,
+    MS_WAVE_PINNAPACO_S  = 516,
+    MS_WAVE_PINNAPACO    = 516,
+    MS_WAVE_MARE_SEA     = 517,
     MS_WAVE_MONTEVILLAGE = 518,
-    MS_WAVE_SHILENA = 519,
-    MS_WAVE_RICO = 520,
-    MS_WAVE_CLEAR = 521,
+    MS_WAVE_SHILENA      = 519,
+    MS_WAVE_RICO         = 520,
+    MS_WAVE_CLEAR        = 521,
 };
 enum MS_SOUND_EFFECT {
     MSD_SE_PO_WATER_HI          = 0x00000000,
@@ -1659,7 +1659,7 @@ public:
 
     bool cameraLooksAtMario();
     u32 checkMarioVoicePlaying(u8);
-    void checkWaveOnAram(MS_SCENE_WAVE);
+    bool checkWaveOnAram(MS_SCENE_WAVE);
     void demoModeIn(u16, bool);
     void demoModeOut(bool);
     void enterStage(MS_SCENE_WAVE, u8, u8);
@@ -1688,7 +1688,7 @@ public:
     bool setRegisterTrackCallback();
     void startBeeSe(Vec *, u32);
     void startForceJumpSound(Vec *, u32, f32, u32);
-    void startMarioVoice(u32, s16, u8);
+    u32 startMarioVoice(u32, s16, u8);
     void startSoundActorSpecial(u32, const Vec *, f32, f32, u32, JAISound **, u32, u8);
     void startSoundSet(u32, const Vec *, u32, f32, u32, u32, u8);
     void startSoundGrp(u32, const Vec *, u32, f32, u32, u32, u8);
