@@ -735,6 +735,7 @@
 #define isGoal__7TEMarioFv                                                ((int (*)(...))0x8003950C)
 #define kill__7TEMarioFv                                                  ((int (*)(...))0x8003952C)
 #define receiveMessage__7TEMarioFP9THitActorUl                            ((int (*)(...))0x8003956C)
+#define receiveMessage__7TMarioFP9THitActorUl                             ((int (*)(...))0x80282af4)
 #define init__7TEMarioFP12TLiveManager                                    ((int (*)(...))0x80039600)
 #define loadAfter__7TEMarioFv                                             ((int (*)(...))0x800397B4)
 #define load__7TEMarioFR20JSUMemoryInputStream                            ((int (*)(...))0x80039810)
