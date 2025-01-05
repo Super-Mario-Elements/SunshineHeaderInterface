@@ -23,7 +23,7 @@ public:
     void changeNozzle(TNozzleType, bool);
     bool damage();
     void emit();
-    TNozzleType getCurrentNozzle() const;
+    TNozzleBase *getCurrentNozzle() const;
     Mtx *getEmitMtx(int);
     void getEmitPosDirSpeed(int, TVec3f *pos, TVec3f *dir, TVec3f *speed);
     Mtx *getNozzleMtx();
