@@ -12,7 +12,7 @@ class TMarioControllerWork;
 
 class TWaterGun {
 public:
-    enum TNozzleType : u8 { Spray, Rocket, Underwater, Yoshi, Hover, Turbo, Sniper };
+    enum TNozzleType : u8 { Spray, Rocket, Underwater, Yoshi, Hover, Turbo};
 
     TWaterGun(TMario *);
 
