@@ -145,7 +145,7 @@ public:
     u16 _01;                    // 0x00FE
     u16 mSoundIDIndex;          // 0x0100
     s32 mStateTimer;            // 0x0104
-    u32 _03;                    // 0x0108
+    f32 _03;                    // 0x0108
     TVec3f mInitialPosition;    // 0x010C
     TVec3f mInitialRotation;    // 0x0118
     u32 _124[3];
