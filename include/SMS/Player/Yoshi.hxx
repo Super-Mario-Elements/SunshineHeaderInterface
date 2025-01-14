@@ -50,7 +50,8 @@ public:
     u32 _03[0x8 / 4];          // 0x002C
     MActor *mActor;            // 0x0034
     u32 _38;                   // 0x0038
-    u32 mJoint;                // 0x003c
+    u16 mJoint;                // 0x003c
+    u16 _3e;                   // 0x003e
     u32 _04[0x44 / 4];         // 0x0040
     f32 mRedComponent;         // 0x0084
     f32 mGreenComponent;       // 0x0088
