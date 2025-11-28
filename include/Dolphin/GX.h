@@ -2427,7 +2427,7 @@ void GXInitFogAdjTable(GXFogAdjTbl *table, u16 width, f32 projmtx[4][4]);
  *
  * \return none
  */
-void GXSetIndTexMatrix(u8 indtexmtx, f32 offset_mtx[2][3], s8 scale_exp);
+void GXSetIndTexMtx(u8 indtexmtx, f32 offset_mtx[2][3], s8 scale_exp);
 
 /*!
  * \fn void GXSetTevIndBumpST(u8 tevstage,u8 indstage,u8 mtx_sel)

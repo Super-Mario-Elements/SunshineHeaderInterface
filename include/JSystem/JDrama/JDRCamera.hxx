@@ -32,6 +32,7 @@ namespace JDrama {
 
     class TLookAtCamera : public TCamera {
     public:
+        TLookAtCamera(f32 near, f32 far, const char* name) : TCamera(near, far, name) {}
         virtual ~TLookAtCamera();
 
         virtual void perform(u32, TGraphics *);

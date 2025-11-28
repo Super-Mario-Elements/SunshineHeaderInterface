@@ -42,9 +42,9 @@ public:
     u16 _1C;
     J3DJoint **mJoints;
     u16 mJointNum;
-    J3DTevStage **mStages;     // ?
+    J3DMaterial **mMaterials;     // ?
     u16 mStageNum;             // ?
-    JUTNameTab **mJointNames;  // JUTNameTab (joints)
+    J3DShape **mShapes;  // JUTNameTab (joints)
     u16 mJointNameNum;
     u32 _38;
     J3DVertexData mVertexData;  // _3C
@@ -105,7 +105,7 @@ public:
     u32 _74;
     u32 _78;
     u32 _7C;
-    u32 _80;  // display list
+    J3DMatPacket** mMaterialPackets;  // display list
     u32 _84;
     u32 _88;
     J3DSkinDeform *mSkinDeform;

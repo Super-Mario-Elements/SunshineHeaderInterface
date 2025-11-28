@@ -57,9 +57,9 @@ public:
     inline JUTTexture() {}
     inline JUTTexture(const char *resource) {
         auto *timg = reinterpret_cast<const ResTIMG *>(JKRFileLoader::getGlbResource(resource));
-        mTexObj2.val[2] = 0;
-        storeTIMG(timg);
-        _50 = false;
+		mEmbPalette = nullptr;
+		storeTIMG(timg);
+		unk50 = 0;
     }
     JUTTexture(int sX, int sY, GXTexFmt format);
     ~JUTTexture();
@@ -69,16 +69,27 @@ public:
     void initTexObj();
     void load(GXTexMapID id);
     void storeTIMG(const ResTIMG *timg);
-
-    GXTexObj mTexObj;
-    GXTexObj mTexObj2;
-    u16 _40;
-    bool _42;
-    bool _43;
-    u32 _44;
-    u32 _48;
-    GXTexObj *mGXObj;  // 0x4C
-    bool _50;
+    
+	/* 0x00 */ GXTexObj mTexObj;
+	/* 0x20 */ const ResTIMG* mTexInfo;
+	/* 0x24 */ void* mTexData;
+	/* 0x28 */ JUTPalette* mEmbPalette;
+	/* 0x2C */ JUTPalette* field_0x2c;
+	/* 0x30 */ u32 mTlutName;
+	/* 0x34 */ u32 mFormat;
+	/* 0x38 */ u32 mAlphaEnabled;
+	/* 0x3C */ u16 mWidth;
+	/* 0x3E */ u16 mHeight;
+	/* 0x40 */ u8 mWrapS;
+	/* 0x41 */ u8 mWrapT;
+	/* 0x42 */ u8 mMinFilter;
+	/* 0x43 */ u8 mMagFilter;
+	/* 0x44 */ u16 mMinLOD;
+	/* 0x46 */ u16 mMaxLOD;
+	/* 0x48 */ s16 mLODBias;
+	/* 0x4B */ u8 mFlags;
+	/* 0x4C */ void* field_0x4c;
+	/* 0x50 */ u8 unk50;
 
     // 4C = GXTexFmt
 };

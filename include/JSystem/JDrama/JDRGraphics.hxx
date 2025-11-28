@@ -1,5 +1,6 @@
 #pragma once
 
+#include <MTX.h>
 #include <Dolphin/types.h>
 #include <JSystem/JDrama/JDRRect.hxx>
 
@@ -13,6 +14,9 @@ namespace JDrama {
         bool _20;
         u8 _21[0x54 - 0x21];
         TRect mViewPortSpace;
+        u32 _64[(0xb4 - 0x64) / 4];
+        Mtx mWorldToScreen;
+        u32 _b8[(0xf0 - 0xe4) / 4];
     };
 
 }  // namespace JDrama

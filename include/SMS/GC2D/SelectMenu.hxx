@@ -18,6 +18,10 @@ public:
     TSelectMenu(const char *);
     virtual ~TSelectMenu();
 
+    void initData(u8, JKRArchive *, TSelectShineManager *, TSelectDir *);
+    void startMove();
+    void startOpenWindow();
+
     virtual void load(JSUMemoryInputStream &) override;
     virtual void loadAfter() override;
     virtual void perform(u32, JDrama::TGraphics *) override;
